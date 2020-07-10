@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - 8000:8000
+    environment:
+      - SECRET_KEY=20e(w0vln_ji1qhth&pj*r7#+r5)gmi804@2&8qeuey0t+h!yx 
+      - ALLOWED_HOSTS=localhost,*
